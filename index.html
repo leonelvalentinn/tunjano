@@ -5,51 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odontología 24/7</title>
+    <link rel="shortcut icon" href="imagenes/logo-odontologia-24-7.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="aos/aos.js"></script>
 </head>
 <body>
-    
-        <header>
-          <div class="item_header">
-             <p>Urgencias Odontológicas 24/7</p>
-              <p>Carrera 15 # 88-64 consultorio 206</p>
+  <header>
+    <div class="item_header">
+      <p>Urgencias Odontológicas 24/7</p>
+      <p>Carrera 15 # 88-64 consultorio 206</p>
+    </div>
+    <nav class="navegador">
+      <div class="menu-bar">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="lbl-menu">
+          <span id="spn1"></span>
+          <span id="spn2"></span>
+          <span id="spn3"></span>
+        </label>
+      </div>
+      <div class="logo_nav">
+        <a href="#"><img src="imagenes/logo-completo-24-7.png" alt="" class="logo_tunjano"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="menu_links">Inicio</a></li>
+        <li id="close"><a href="index.html#nosotros" class="menu_links">Nosotros</a></li>
+        <li><a href="implantes-dentales.html" class="menu_links">Implantes Dentales</a></li>
+        <li><a href="urgencias.html" class="urgencias  menu_links">Urgencias Dentales</a></li>
+        <li>
+          <div class="container-collapse">
+            <a class="menu_links" id="servicios-mov">Servicios <i class="bi bi-chevron-down"></i></a>
+            <a class="menu_links" id="servicios">Servicios <i class="bi bi-chevron-down"></i></a>
+            <div class="container-submenu" id="submenu">
+              <div class="submenu">
+                <ul>
+                  <a href="urgencias.html">
+                    <li>Urgencias Odontológicas 24 Horas</li>
+                  </a>
+                  <a href="armonizacion-orofacial.html">
+                    <li>Armonización Orofacial</li>
+                  </a>
+                  <a href="cirugiaoral.html">
+                    <li>Cirugía Oral</li>
+                  </a>
+                  <a href="aclaramiento.html">
+                    <li>Aclaramiento Dental</li>
+                  </a>
+                  <a href="limpieza.html">
+                    <li>Limpieza Profunda</li>
+                  </a>
+                  <a href="ortodoncia.html">
+                    <li>Ortodoncia Invisible</li>
+                  </a>
+                  <a href="implantes-dentales.html">
+                    <li>Implantología</li>
+                  </a>
+                  <a href="coronas.html">
+                    <li>Coronas Libres de Metal</li>
+                  </a>
+                  <a href="armonizacion-encias.html">
+                    <li>Armonización de las Encias</li>
+                  </a>
+                  <a href="diseno-sonrisa.html">
+                    <li>Diseño de Sonrisa</li>
+                  </a>
+                  <a href="bruxismo.html">
+                    <li>Manejo Integral de Bruxismo</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
           </div>
-          <nav class="navegador">
-            <div class="menu-bar">
-              <input type="checkbox" id="btn-menu">
-              <label for="btn-menu" class="lbl-menu">
-              <span id="spn1"></span>
-              <span id="spn2"></span>
-              <span id="spn3"></span>
-              
-              </label>
-              
-            </div>
-            <div class="logo_nav">
-                
-            <a href="#"><img src="imagenes/logo-completo-24-7.png" alt="" class="logo_tunjano">
-            </a>
-      
-            </div>
-            <ul class="menu">
-              <li><a href="index.html" class="menu_links">Inicio</a></li>
-              <li><a href="#nosotros" class="menu_links">Nosotros</a></li>
-              <li><a href="implantes-dentales.html" class="menu_links">Implantes Dentales</a></li>
-              <li><a href="#" class="urgencias menu_links">Urgencias Dentales</a></li>
-              <li><a href="#servicios" class="menu_links">Servicios</a></li>
-              <li><a href="#ubicacion" class="menu_links">Ubicación</a></li>
-
-            </ul>
-
-          </nav>
-
-
-        </header>
+        </li>
+        <li id="close"><a href="#ubicacion" class="menu_links">Ubicación</a></li>
+      </ul>
+    </nav>
+  </header>
         <div class="slide_contenedor">
           <div class="miSlider fade">
             <img src="imagenes/slider1.png" alt="">
@@ -85,14 +121,13 @@
             <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
           </div>
           <div class="barras">
-             <span class="barra active" onclick="posicionSlide(1)"></span>
-             <span class="barra" onclick="posicionSlide(2)"></span>
-             <span class="barra" onclick="posicionSlide(3)"></span>
-             <span class="barra" onclick="posicionSlide(4)"></span>
-             <span class="barra" onclick="posicionSlide(5)"></span>
-             <span class="barra" onclick="posicionSlide(6)"></span>
-             <span class="barra" onclick="posicionSlide(7)"></span>
-
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+            <span class="barra" onclick="posicionSlide(4)"></span>
+            <span class="barra" onclick="posicionSlide(5)"></span>
+            <span class="barra" onclick="posicionSlide(6)"></span>
+            <span class="barra" onclick="posicionSlide(7)"></span>
           </div>
 
         </div>
@@ -119,35 +154,75 @@
        
 
 
-        <div class="tratamientos" id="servicios">
-             <h2>SERVICIOS <span>&</span> TRATAMIENTOS</h2>
-             <div class="servicios">
+        <div class="tratamientos" id="servicio">
+            <h2>SERVICIOS <span>&</span> TRATAMIENTOS</h2>
+            <div class="servicios">
               <div class="item_servicios">
                 <img src="imagenes/urgencias_dentales.png" alt="">
                 <div class="nombre_servicio">
                   <h4>URGENCIAS DENTALES</h4>
                 </div>
-                <img src="imagenes/flecha_servicios.png" alt="">
-                
+                <img src="imagenes/flecha_servicios.png" alt="">  
               </div>
               <div class="item_servicios">
-                <img src="imagenes/cirugia_e_implantes.png" alt="">
-                 <div class="nombre_servicio">
-                   <h4>IMPLANTES DENTALES</h4>
-                 </div>
-                 <img src="imagenes/flecha_servicios.png" alt="">
-                 
-               </div>
-               
-               <div class="item_servicios">
+                <img src="imagenes/endodoncia.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>ARMONIZACIÓN OROFACIAL</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
+                <img src="imagenes/anestesia_computarizada.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>CIRUGÍA ORAL</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
                 <img src="imagenes/blanqueamiento_dental.png" alt="">
                 <div class="nombre_servicio">
-                  <h4>BLANQUEAMIENTO DENTAL</h4>
+                  <h4>ACLARAMIENTO DENTAL</h4>
                 </div>
                 <img src="imagenes/flecha_servicios.png" alt="">
                 
               </div>
-    
+              <div class="item_servicios">
+                 
+                <img src="imagenes/limpieza_dental.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>LIMPIEZA DENTAL</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
+                 
+                <img src="imagenes/ortodoncia.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>ORTODONCIA INVISIBLE</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
+                <img src="imagenes/cirugia_e_implantes.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>IMPLANTES DENTALES</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
+                <img src="imagenes/resinas_dentales.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>CORONAS LIBRES DE METAL</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
+              <div class="item_servicios">
+                <img src="imagenes/cirugia_maxilofacial.png" alt="">
+                <div class="nombre_servicio">
+                  <h4>ARMONIZACIÓN DE ENCIAS</h4>
+                </div>
+                <img src="imagenes/flecha_servicios.png" alt="">
+              </div>
                <div class="item_servicios">
                  
                  <img src="imagenes/c&m_kids.png" alt="">
@@ -158,18 +233,11 @@
                </div>
               
               
+               
                <div class="item_servicios">
-                 
-                 <img src="imagenes/limpieza_dental.png" alt="">
-                 <div class="nombre_servicio">
-                   <h4>LIMPIEZA DENTAL</h4>
-                 </div>
-                 <img src="imagenes/flecha_servicios.png" alt="">
-               </div>
-               <div class="item_servicios">
-                <img src="imagenes/cirugia_maxilofacial.png" alt="">
+                <img src="imagenes/protesis_dental.png" alt="">
                 <div class="nombre_servicio">
-                  <h4>DESPIGMENTACIÓN DENTAL</h4>
+                  <h4>MANEJO INTEGRAL DE BRUXISMO</h4>
                 </div>
                 <img src="imagenes/flecha_servicios.png" alt="">
                 
@@ -181,7 +249,7 @@
         </div>
         <div class="section_video">
           <div class="video_item">
-            <video src="video/servicios_24_7 (1080p).mp4" controls="1" poster="imagenes/play_cinta.png"></video>
+            <video src="video/servicios_24_7 (1080p).mp4" controls="1" poster="imagenes/portada-boton-play-web.jpg"></video>
           </div>
         </div>
         <div class="paralax" id="nosotros">
@@ -432,7 +500,6 @@
 </div>
 <div class="mapa" id="ubicacion">
   <div class="item_mapa">
-   
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5492421166555!2d-74.05531658523778!3d4.674141796604801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8596dece4b5d%3A0xa46ae8bcee12506e!2sOdontolog%C3%ADa%2024%2F7!5e0!3m2!1ses-419!2smx!4v1641933681909!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
@@ -452,7 +519,6 @@
       <li><a href="#">Nosotros</a></li>
       <li><a href="#">Servicios</a></li>
       <li><a href="#">Urgencias</a></li>
-      <li><a href="#">Formas de pago</a></li>
       <li><a href="#">Ubicación</a></li>
 
     </ul>
@@ -499,6 +565,7 @@
         </p>
         <p>© 2022 Todos los derechos reservados
           Clínica Odontología 24/7</p>
+          <p>Desing by Agencia de Marketing Dentarios</p>
     </div>
 
   </div>

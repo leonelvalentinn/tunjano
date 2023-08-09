@@ -8,6 +8,9 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 50px auto;
 }
+.item-implante-dental {
+  padding: 10px;
+}
 .item-implante-dental:nth-child(1) {
   display: flex;
   justify-content: center;
@@ -54,6 +57,7 @@
 .costos {
   width: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 .costos h2 {
   font-size: 2.5em;
@@ -75,6 +79,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 10px;
 }
 .item-costos:nth-child(2) .sub-item-costos:nth-child(2) {
   display: flex;
@@ -83,9 +88,9 @@
   align-items: flex-end;
 }
 .sub-item-costos img {
-  width: 450px;
-  height: 496px;
+  max-width: 90%;
   object-fit: contain;
+  border-radius: 10px;
 }
 .sub-item-costos h2 {
   font-size: 1.7em;
