@@ -884,6 +884,11 @@ footer {
   list-style: none;
   padding: 7px 0px;
 }
+#redes { /*Animación para aparecer y desaparecer el botón*/
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 999;
+}
 .item_footer ul li a {
   font-size: 16px;
   color: #fff;
@@ -981,6 +986,14 @@ footer {
 .icono_principal {
   position: fixed;
   bottom: 5vh;
+  right: 1em;
+  z-index: 5;
+  animation: pulse 2s infinite;
+  border-radius: 50%;
+}
+.icono_secundario {
+  position: fixed;
+  bottom: 23vh;
   right: 1em;
   z-index: 5;
   animation: pulse 2s infinite;
@@ -1198,7 +1211,9 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  
+  .icono_secundario {
+    bottom: 25vh;
+  }
   #servicios-mov {
     display: block;
   }
@@ -1890,6 +1905,13 @@ footer {
   .icono_principal {
     max-width: 25%;
   }
+  .icono_secundario {
+    max-width: 50%;
+  }
+
+  .icono_secundario {
+    max-width: 25%;
+  }
   .description_specialities p {
     font-size: 16px;
   }
@@ -1967,6 +1989,10 @@ footer {
 @media (max-width: 370px) {
   .icono_principal {
     max-width: 25%;
+  }
+  .icono_secundario {
+    max-width: 25%;
+    bottom: 23vh;
   }
   .description_specialities p {
     font-size: 16px;

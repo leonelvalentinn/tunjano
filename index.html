@@ -546,14 +546,15 @@
 
 
 </div>
-<div class="redes_flotantes">
-  <a href="tel:3132340764" class="icono_principal" target="_blank"><img src="imagenes/phone.png" alt=""></a>
-  <div class="contacto" >
-    <p>
-      ¡Da Click y contactanos!
-    </p>
+  <div class="redes_flotantes" id="redes">
+    <a href="https://api.whatsapp.com/send?phone=573132340764" class="icono_secundario" target="_blank"><img src="imagenes/whats.png" alt=""></a>
+    <a href="tel:3132340764" class="icono_principal" target="_blank"><img src="imagenes/phone.png" alt=""></a>
+    <div class="contacto" >
+      <p>
+        ¡Da Click y contáctanos!
+      </p>
+    </div>
   </div>
-</div>
 <footer>
   <div class="item_footer">
     <h4 class="list__button--click">MENU</h4>
@@ -607,25 +608,24 @@
         </p>
         <p>© 2022 Todos los derechos reservados
           Clínica Odontología 24/7</p>
-          <p>Desing by Agencia de Marketing Dentarios</p>
+          <p>Design by Agencia de Marketing Dentarios</p>
     </div>
 
   </div>
 </footer>
-  
-  
-
-    
-
-  
-
-    
-
-
-
-     
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    const redes = document.getElementById("redes");
+    $(function() {
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 80) {
+      redes.style.opacity = 1;
+    } else {
+      redes.style.opacity = 0;
+    }
+      });
+    });
+  </script>
    <script src="js/index.js"></script>
    <script src="js/slider.js"></script>
    <script src="js/pago.js"></script>

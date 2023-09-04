@@ -252,7 +252,8 @@
       <div class="item_mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5492421166555!2d-74.05531658523778!3d4.674141796604801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8596dece4b5d%3A0xa46ae8bcee12506e!2sOdontolog%C3%ADa%2024%2F7!5e0!3m2!1ses-419!2smx!4v1641933681909!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="redes_flotantes">
+    <div class="redes_flotantes" id="redes">
+      <a href="https://api.whatsapp.com/send?phone=573132340764" class="icono_secundario" target="_blank"><img src="imagenes/whats.png" alt=""></a>
       <a href="tel:3132340764" class="icono_principal" target="_blank"><img src="imagenes/phone.png" alt=""></a>
       <div class="contacto" >
         <p>
@@ -303,6 +304,19 @@
         </div>
       </div>
     </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    const redes = document.getElementById("redes");
+    $(function() {
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 80) {
+      redes.style.opacity = 1;
+    } else {
+      redes.style.opacity = 0;
+    }
+      });
+    });
+  </script>
   <script src="js/index.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/pago.js"></script>
